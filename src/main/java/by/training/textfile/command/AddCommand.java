@@ -1,5 +1,7 @@
 package by.training.textfile.command;
 
+import by.training.textfile.business.Receiver;
+
 public class AddCommand implements Command {
 
     Receiver receiver;

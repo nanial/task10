@@ -3,9 +3,11 @@ package by.training.textfile.controller;
 import by.training.textfile.bean.Directory;
 import by.training.textfile.bean.Text;
 import by.training.textfile.bean.TextFile;
-import by.training.textfile.command.*;
+import by.training.textfile.business.MenuFactory;
 import by.training.textfile.logic.DirectoryUtils;
 import by.training.textfile.logic.DirectoryUtilsImpl;
+import by.training.textfile.view.View;
+
 import java.util.ArrayList;
 
 //Создать объект класса Текстовый файл, используя классы Файл, Директория.
@@ -15,13 +17,9 @@ public class Runner {
 
     public static void main(String[] args) {
 
-        Receiver receiver = new Receiver();
-        Dispatcher userService = new Dispatcher(new CreateCommand(receiver),
-                new RenameCommand(receiver),
-                new AddCommand(receiver),
-                new DeleteCommand(receiver),
-                new PrintCommand(receiver));
-        userService.rename();
+        View view = new MenuFactory().getMenuBuilder().getMenu();
+        view.setUserService();
+
 
         DirectoryUtils dir = new DirectoryUtilsImpl(new Directory
                 ("D:\\study\\directory", new ArrayList<>()));

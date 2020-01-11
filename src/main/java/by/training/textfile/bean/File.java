@@ -4,7 +4,7 @@ public class File {
 
     private String nameOfFile;
     private Directory dir;
-
+    private java.io.File file;
 
     public File() {
 
@@ -27,6 +27,22 @@ public class File {
         this.nameOfFile = nameOfFile;
     }
 
+    public Directory getDir() {
+        return dir;
+    }
+
+    public void setDir(Directory dir) {
+        this.dir = dir;
+    }
+
+    public java.io.File getFile() {
+        return file;
+    }
+
+    public void setFile(java.io.File file) {
+        this.file = file;
+    }
+
     public void renameFile(String newNameOfFile){
         this.setNameOfFile(newNameOfFile);
     }
@@ -36,22 +52,28 @@ public class File {
         if (this == o) return true;
         if (!(o instanceof File)) return false;
 
-        File file = (File) o;
+        File file1 = (File) o;
 
-        if (getNameOfFile() != null ? !getNameOfFile().equals(file.getNameOfFile()) : file.getNameOfFile() != null)
+        if (getNameOfFile() != null ? !getNameOfFile().equals(file1.getNameOfFile()) : file1.getNameOfFile() != null)
             return false;
-        return dir != null ? dir.equals(file.dir) : file.dir == null;
+        if (getDir() != null ? !getDir().equals(file1.getDir()) : file1.getDir() != null) return false;
+        return getFile() != null ? getFile().equals(file1.getFile()) : file1.getFile() == null;
     }
 
     @Override
     public int hashCode() {
         int result = getNameOfFile() != null ? getNameOfFile().hashCode() : 0;
-        result = 31 * result + (dir != null ? dir.hashCode() : 0);
+        result = 31 * result + (getDir() != null ? getDir().hashCode() : 0);
+        result = 31 * result + (getFile() != null ? getFile().hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
-        return nameOfFile;
+        return "File{" +
+                "nameOfFile='" + nameOfFile + '\'' +
+                ", dir=" + dir +
+                ", file=" + file +
+                '}';
     }
 }

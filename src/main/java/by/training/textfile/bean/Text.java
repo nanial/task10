@@ -1,9 +1,9 @@
 package by.training.textfile.bean;
 
 
-import by.training.textfile.logic.TextUtils;
+import java.io.Serializable;
 
-public class Text implements TextUtils {
+public class Text implements Serializable {
 
     private String title;
     private StringBuffer content;
@@ -13,17 +13,20 @@ public class Text implements TextUtils {
         this.content = content;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public StringBuffer getContent() {
         return content;
     }
 
     public void setContent(StringBuffer content) {
         this.content = content;
-    }
-
-    public void supplyText(String suppSnippet){
-
-        this.setContent(this.getContent().append(suppSnippet));
     }
 
     @Override

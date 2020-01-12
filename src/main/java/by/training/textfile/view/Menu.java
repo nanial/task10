@@ -6,7 +6,7 @@ import by.training.textfile.controller.Dispatcher;
 
 public class Menu implements View {
 
-    public void setUserService() {
+    public void userService() {
 
         Receiver receiver = new Receiver();
         Dispatcher dispatcher = new Dispatcher(new CreateCommand(receiver),
@@ -14,7 +14,8 @@ public class Menu implements View {
                 new AddCommand(receiver),
                 new DeleteCommand(receiver),
                 new PrintCommand(receiver));
-        dispatcher.rename();
+
+        dispatcher.rename();//test
     }
 
 }

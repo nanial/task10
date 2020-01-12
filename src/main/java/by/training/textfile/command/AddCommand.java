@@ -12,6 +12,6 @@ public class AddCommand implements Command {
 
     @Override
     public void execute() {
-        receiver.addInfo("n");
+        receiver.addInfo();
     }
 }

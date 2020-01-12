@@ -8,8 +8,8 @@ public class FSBuilderImpl implements FSBuilder {
     private FS fs;
     private static FSBuilderImpl instance;
 
-    public FSBuilderImpl() {
-        this.fs = fs;
+    private FSBuilderImpl() {
+        this.fs = new FS();
     }
     synchronized public static FSBuilderImpl getInstance(){
 

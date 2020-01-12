@@ -1,16 +1,27 @@
 package by.training.textfile.business;
 
+import by.training.textfile.apibusiness.FileManager;
 import by.training.textfile.bean.File;
+
+//from command
 
 public class Receiver {
 
+    FileManager fm = new FileManagerFactory().getFileManagerBuilder().getFileManager();
+
     public File create(){
-        return new File();
+        return fm.create();
     }
     public void rename(){
-        System.out.println("This is rename method");
+        fm.rename();
     }
-    public void printConsole(){}
-    public void addInfo(String s){}
-    public void delete(){}
+    public void printConsole(){
+        fm.printConsole();
+    }
+    public void addInfo(){
+        fm.addInfo();
+    }
+    public void delete(){
+       fm.delete();
+    }
 }

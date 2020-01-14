@@ -16,10 +16,20 @@ public class Menu implements View {
                 new DeleteCommand(receiver),
                 new PrintCommand(receiver));
 
-        /*System.out.println("Input name of file:");
+     /*   System.out.println("Input name of file that want to rename :");
         dispatcher.rename();*/
+/*
         System.out.println("Input name of file for print:");
         dispatcher.printConsole();
+*/
+     /*   System.out.println("Input name of file that want to delete :");
+        dispatcher.delete();*/
+
+      /*  System.out.println("Input name of file and snippet for apply :");
+        dispatcher.addInfo();*/
+
+        System.out.println("Input name of file to create :");
+        dispatcher.create();
       // dispatcher.getCommand("rename").execute();
     }
 

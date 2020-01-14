@@ -48,6 +48,8 @@ public class TextFile extends File implements Serializable {
 
     @Override
     public String toString() {
-        return getNameFile();
+        return "TextFile{" +
+                "text=" + text +
+                '}';
     }
 }

@@ -2,10 +2,7 @@ package by.training.textfile.business;
 
 import by.training.textfile.apiDao.FSDao;
 import by.training.textfile.apibusiness.FileManager;
-import by.training.textfile.bean.Directory;
-import by.training.textfile.bean.FS;
-import by.training.textfile.bean.File;
-import by.training.textfile.bean.TextFile;
+import by.training.textfile.bean.*;
 
 import java.util.List;
 import java.util.Scanner;
@@ -36,12 +33,19 @@ public class FileManagerImpl implements FileManager {
     }//return fs
 
     @Override
-    public File create() {
-        Directory directory = new Directory(scanner.nextLine());
+    public void create() {
+       // Directory directory = new Directory(scanner.nextLine());
         String nameFile = scanner.nextLine();
-        File file = new File(nameFile);
-        this.writeInFS(fs.addFS(file));
-        return file;
+        List<File> temp = this.files();
+        File newFile = new File(nameFile);
+
+        if (temp.contains(newFile)) {
+            System.out.println("This file is already exists");
+        } else {
+            temp.add(newFile);
+        }
+
+        this.writeInFS(temp);
     }
 
     @Override
@@ -49,26 +53,31 @@ public class FileManagerImpl implements FileManager {
 
         String nameFile = scanner.nextLine();
         String newNameFile = scanner.nextLine();
-        File file = new File(nameFile);
 
-        if (this.files().contains(file)) {
+        List<File> temp = this.files();
 
-            file.setNameFile(newNameFile);
-            this.writeInFS(fs.addFS(file));
+        for (File s : temp){
 
-        } else {
-            System.out.println("file doesn't exists");
+            if(s.getNameFile().equals(nameFile)){
+
+                s.setNameFile(newNameFile);
+            }
         }
+        this.writeInFS(temp);
     }
 
     @Override
     public void printConsole() {
 
         String nameFile = scanner.nextLine();
-        File file = new File(nameFile);
 
-        if (this.files().contains(file)) {
-            System.out.println(file.getText());
+        for (File s : this.files()){
+
+            if(s.getNameFile().equals(nameFile)){
+
+                System.out.println("File contents " + s.getText().getTitle()
+                        + " " + s.getText().getContent());
+            }
         }
     }
 
@@ -76,20 +85,37 @@ public class FileManagerImpl implements FileManager {
     public void addInfo() {
         String nameFile = scanner.nextLine();
         String suppSnippet = scanner.nextLine();
-        TextFile file = new TextFile(nameFile);
 
-        /*if (this.files().contains(file)) {
-            file.getText().getContent().append(suppSnippet);
-        }*/
+        List<File> temp = this.files();
+
+        for (File s : temp){
+
+            if(s.getNameFile().equals(nameFile)){
+
+                String content =  s.getText().getContent();
+                String strTemp = content + " " + suppSnippet;
+                s.getText().setContent(strTemp);
+            }
+        }
+        this.writeInFS(temp);
+
     }
 
     @Override
     public void delete() {
 
         String nameFile = scanner.nextLine();
-        TextFile file = new TextFile(nameFile);
-        if (this.files().contains(file)) {
-            this.files().remove(file);
+        List<File> temp = this.files();
+
+        for (File s : temp){
+
+            if(s.getNameFile().equals(nameFile)){
+
+                temp.remove(s);
+            }
         }
+        this.writeInFS(temp);
     }
+
 }
+

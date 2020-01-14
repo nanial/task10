@@ -45,20 +45,12 @@ public class Dispatcher {//developer
         this.delete = delete;
         this.print = print;
     }
-    File create(){
-        create.execute();
-        return new File();
-    }
-
+    public void create(){ create.execute(); }
     public void rename(){
         rename.execute();
     }
-    public void printConsole(){
-        print.execute();
-    }
-    public void addInfo(String s){
-        addInfo.execute();
-    }
+    public void printConsole(){ print.execute(); }
+    public void addInfo(){ addInfo.execute(); }
     public void delete(){
         delete.execute();
     }

@@ -4,7 +4,31 @@
   <void method="add">
    <object class="by.training.textfile.bean.File">
     <void property="nameFile">
-     <string>file # one </string>
+     <string>file # one</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="by.training.textfile.bean.File">
+    <void property="nameFile">
+     <string>file # two</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="by.training.textfile.bean.File">
+    <void property="nameFile">
+     <string>file # three</string>
+    </void>
+    <void property="text">
+     <object class="by.training.textfile.bean.Text">
+      <void property="content">
+       <string>initial content</string>
+      </void>
+      <void property="title">
+       <string>title</string>
+      </void>
+     </object>
     </void>
    </object>
   </void>

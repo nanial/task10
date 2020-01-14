@@ -1,6 +1,5 @@
 package by.training.textfile.command;
 
-import by.training.textfile.bean.Directory;
 import by.training.textfile.business.Receiver;
 
 public class CreateCommand implements Command {

@@ -8,6 +8,9 @@ public class Directory implements Serializable {
     private String pathName;
    // private ArrayList<File> files;
 
+    public Directory() {
+    }
+
     public Directory(String pathName) {
         this.pathName = pathName;
      //   this.files = files;

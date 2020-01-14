@@ -6,9 +6,12 @@ import java.io.Serializable;
 public class Text implements Serializable {
 
     private String title;
-    private StringBuffer content;
+    private String content;
 
-    public Text(String title, StringBuffer content) {
+    public Text() {
+    }
+
+    public Text(String title, String content) {
         this.title = title;
         this.content = content;
     }
@@ -21,11 +24,11 @@ public class Text implements Serializable {
         this.title = title;
     }
 
-    public StringBuffer getContent() {
+    public String getContent() {
         return content;
     }
 
-    public void setContent(StringBuffer content) {
+    public void setContent(String content) {
         this.content = content;
     }
 
@@ -49,6 +52,9 @@ public class Text implements Serializable {
 
     @Override
     public String toString() {
-        return title + "\n" + content;
+        return "Text{" +
+                "title='" + getTitle() + '\'' +
+                ", content=" + getContent() +
+                '}';
     }
 }

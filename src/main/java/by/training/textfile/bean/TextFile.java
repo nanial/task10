@@ -11,8 +11,8 @@ public class TextFile extends File implements Serializable {
         super((nameFile));
     }
 
-    public TextFile(String nameFile, Directory dir) {
-        super(nameFile, dir);
+    public TextFile(Text text) {
+        this.text = text;
     }
 
     public TextFile(String nameFile, Text text) {

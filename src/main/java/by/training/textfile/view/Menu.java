@@ -8,6 +8,7 @@ public class Menu implements View {
 
     public void userService() {
 
+
         Receiver receiver = new Receiver();
         Dispatcher dispatcher = new Dispatcher(new CreateCommand(receiver),
                 new RenameCommand(receiver),
@@ -15,7 +16,11 @@ public class Menu implements View {
                 new DeleteCommand(receiver),
                 new PrintCommand(receiver));
 
-        dispatcher.rename();//test
+        /*System.out.println("Input name of file:");
+        dispatcher.rename();*/
+        System.out.println("Input name of file for print:");
+        dispatcher.printConsole();
+      // dispatcher.getCommand("rename").execute();
     }
 
 }

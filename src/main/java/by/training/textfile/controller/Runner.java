@@ -21,14 +21,13 @@ public class Runner {
     public static void main(String[] args) {
 
         FS fs = new FSFactory().getFSBuilder().getFS();
-
         FileManager fm = new FileManagerFactory().getFileManagerBuilder().getFileManager();
 
         fm.writeInFS(fs.fillFS());
-        fm.files();
+        System.out.println(fm.files());
 
         View view = new MenuFactory().getMenuBuilder().getMenu();
         view.userService();
-
+        System.out.println(fm.files());
     }
 }

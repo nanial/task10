@@ -6,6 +6,7 @@ public class File implements Serializable {
 
     private String nameFile;
     private Directory dir;
+    private Text text;
 
     public File() {
 
@@ -15,9 +16,18 @@ public class File implements Serializable {
         this.nameFile = nameFile;
     }
 
-    public File(String nameFile, Directory dir) {
+    public File(String nameFile, Text text) {
+
         this.nameFile = nameFile;
-        this.dir = dir;
+        this.text = text;
+    }
+
+    public Text getText() {
+        return text;
+    }
+
+    public void setText(Text text) {
+        this.text = text;
     }
 
     public String getNameFile() {
@@ -60,6 +70,7 @@ public class File implements Serializable {
         return "File{" +
                 "nameFile='" + nameFile + '\'' +
                 ", dir=" + dir +
+                ", text=" + getText() +
                 '}';
     }
 }

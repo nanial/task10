@@ -3,6 +3,7 @@ package by.training.textfile.controller;
 import by.training.textfile.bean.File;
 import by.training.textfile.business.Receiver;
 import by.training.textfile.command.*;
+import by.training.textfile.exception.FileException;
 
 import java.util.EnumMap;
 import java.util.Map;
@@ -20,10 +21,11 @@ public class Dispatcher {//developer
             new EnumMap<CommandEnum, Command>(CommandEnum.class);
 
     public Dispatcher() {
+
         map.put(CommandEnum.ADD_INFO, new AddCommand(receiver));
         map.put(CommandEnum.CREATE, new CreateCommand(receiver));
         map.put(CommandEnum.DELETE, new DeleteCommand(receiver));
-        map.put(CommandEnum.PRINT_CONSOLE, new PrintCommand(receiver));
+        map.put(CommandEnum.PRINT, new PrintCommand(receiver));
         map.put(CommandEnum.RENAME, new RenameCommand(receiver));
     }
 
@@ -45,13 +47,13 @@ public class Dispatcher {//developer
         this.delete = delete;
         this.print = print;
     }
-    public void create(){ create.execute(); }
-    public void rename(){
+    public void create() throws FileException { create.execute(); }
+    public void rename() throws FileException {
         rename.execute();
     }
-    public void printConsole(){ print.execute(); }
-    public void addInfo(){ addInfo.execute(); }
-    public void delete(){
+    public void printConsole() throws FileException { print.execute(); }
+    public void addInfo() throws FileException { addInfo.execute(); }
+    public void delete() throws FileException {
         delete.execute();
     }
 }

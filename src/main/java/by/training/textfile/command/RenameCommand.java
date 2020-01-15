@@ -1,8 +1,7 @@
 package by.training.textfile.command;
 
-import by.training.textfile.business.FileManagerFactory;
-import by.training.textfile.business.FileManagerImpl;
 import by.training.textfile.business.Receiver;
+import by.training.textfile.exception.FileException;
 
 public class RenameCommand implements Command {
 
@@ -14,7 +13,7 @@ public class RenameCommand implements Command {
     }
 
     @Override
-    public void execute() {
+    public void execute() throws FileException {
         receiver.rename();
     }
 }

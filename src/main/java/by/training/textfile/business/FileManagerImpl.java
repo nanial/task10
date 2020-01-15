@@ -3,6 +3,7 @@ package by.training.textfile.business;
 import by.training.textfile.apiDao.FSDao;
 import by.training.textfile.apibusiness.FileManager;
 import by.training.textfile.bean.*;
+import by.training.textfile.exception.FileException;
 
 import java.util.List;
 import java.util.Scanner;
@@ -33,23 +34,26 @@ public class FileManagerImpl implements FileManager {
     }//return fs
 
     @Override
-    public void create() {
-       // Directory directory = new Directory(scanner.nextLine());
+    public void create() throws FileException {
+
+        Directory directory = new Directory(scanner.nextLine());
         String nameFile = scanner.nextLine();
         List<File> temp = this.files();
-        File newFile = new File(nameFile);
+        File tempFile = new File(nameFile, directory);
 
-        if (temp.contains(newFile)) {
-            System.out.println("This file is already exists");
-        } else {
-            temp.add(newFile);
+        if (temp.contains(tempFile)) {
+
+            throw new FileException("Attempt to create file already exists");
         }
+        else {
 
+            temp.add(tempFile);
+        }
         this.writeInFS(temp);
     }
 
     @Override
-    public void rename() {
+    public void rename() throws FileException {
 
         String nameFile = scanner.nextLine();
         String newNameFile = scanner.nextLine();
@@ -67,9 +71,15 @@ public class FileManagerImpl implements FileManager {
     }
 
     @Override
-    public void printConsole() {
+    public void printConsole() throws FileException {
 
         String nameFile = scanner.nextLine();
+        File check = new File(nameFile);
+
+        if(!this.exists(check)){
+
+            throw new FileException("Attempt print non-existent file");
+        }
 
         for (File s : this.files()){
 
@@ -82,11 +92,18 @@ public class FileManagerImpl implements FileManager {
     }
 
     @Override
-    public void addInfo() {
+    public void addInfo() throws FileException {
+
         String nameFile = scanner.nextLine();
         String suppSnippet = scanner.nextLine();
 
         List<File> temp = this.files();
+        File check = new File(nameFile);
+
+        if(!this.exists(check)){
+
+            throw new FileException("Attempt add info into non-existent file");
+        }
 
         for (File s : temp){
 
@@ -98,11 +115,10 @@ public class FileManagerImpl implements FileManager {
             }
         }
         this.writeInFS(temp);
-
     }
 
     @Override
-    public void delete() {
+    public void delete() throws FileException {
 
         String nameFile = scanner.nextLine();
         List<File> temp = this.files();
@@ -113,9 +129,22 @@ public class FileManagerImpl implements FileManager {
 
                 temp.remove(s);
             }
+            else {
+                throw new FileException("Attempt remove non-existent file");
+            }
         }
+
         this.writeInFS(temp);
     }
 
+    boolean exists(File file){
+
+        for( File f : this.files()){
+            if(f.getNameFile().equals(file.getNameFile())){
+                return true;
+            }
+        }
+        return false;
+    }
 }
 

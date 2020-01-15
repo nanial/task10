@@ -6,7 +6,6 @@
       <change afterPath="D:/$RECYCLE.BIN/S-1-5-21-2851624354-303915512-3474638792-1001/$R8O8XKR.iml" afterDir="false" />
       <change afterPath="D:/$RECYCLE.BIN/S-1-5-21-2851624354-303915512-3474638792-1001/$RB5C6G3/linearalgoritm.iml" afterDir="false" />
       <change afterPath="D:/$RECYCLE.BIN/S-1-5-21-2851624354-303915512-3474638792-1001/$RED6OI1.patient/by.taining.patient.iml" afterDir="false" />
-      <change afterPath="D:/Telegram Desktop/log_start0.txt" afterDir="false" />
       <change afterPath="D:/Telegram Desktop/tdata/D877F783D5D3EF8C/CD6BE679489C97990" afterDir="false" />
       <change afterPath="D:/Telegram Desktop/tdata/D877F783D5D3EF8C/F41EBCAA5FEF7C881" afterDir="false" />
       <change afterPath="D:/Telegram Desktop/tdata/D877F783D5D3EF8C/map0" afterDir="false" />
@@ -300,6 +299,25 @@
       <change afterPath="$PROJECT_DIR$/../PerlHarbor/src/shapoval/harbor/Ship.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Socket/Socket.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Vehicle/.idea/Vehicle.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/task08/bean/Matrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/task08/controller/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/task08/exception/MatrixException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/task08/logger/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/task08/service/CreateMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/task08/service/CreateMatrixImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/task08/service/MatrixOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/task08/service/MatrixOperationImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/task08/service/ReadMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/task08/service/ReadTwoMatrixDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/task08/validator/MatrixValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/task08/view/PrintMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/task08/view/PrintMatrixImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/resources/log4j.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.task06sorting/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.task06sorting/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.task06sorting/.idea/compiler.xml" afterDir="false" />
@@ -350,6 +368,29 @@
       <change afterPath="$PROJECT_DIR$/../by.training.task08matrix/src/main/java/by/training/task08/view/PrintMatrixImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.task08matrix/src/main/resources/log4j.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.task08matrix/twoMatrix.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/apiDao/FSDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/apibusiness/FSBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/apibusiness/FileManagerBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/apibusiness/MenuBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/Directory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/Text.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/TextFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FSBuilderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FSFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FileManagerBuilderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FileManagerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/MenuBuilderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/MenuFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/CreateCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/dao/FSDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/view/View.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../financist/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../financist/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../financist/.idea/misc.xml" afterDir="false" />
@@ -520,18 +561,36 @@
       <change beforePath="$PROJECT_DIR$/../../PharmaJava-master/target/classes/entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../PharmaJava-master/target/classes/entities/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PharmaJava-master/target/classes/servlets/AdminProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../PharmaJava-master/target/classes/servlets/AdminProductServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/apibusiness/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/apibusiness/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/TextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/TextFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/FS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/FS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/File.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FileManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FileManagerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/AddCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/CommandEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/CommandEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/CreateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/CreateCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/DeleteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/DeleteCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/PrintCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/PrintCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/RenameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/RenameCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/controller/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/controller/Dispatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/controller/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/controller/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/view/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/view/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/bean/TextFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/bean/TextFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/bean/FS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/bean/FS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/bean/File.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/bean/File.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/command/AddCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/command/AddCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/command/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/command/Command.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/command/CreateCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/command/CreateCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/command/DeleteCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/command/DeleteCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/command/PrintCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/command/PrintCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/command/RenameCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/command/RenameCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/controller/Dispatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/controller/Dispatcher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/controller/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/controller/Runner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/view/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/view/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/view/View.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -579,8 +638,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -680,7 +742,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578988367276</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="methods">
+      <created>1579025074837</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579025074838</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -688,13 +757,26 @@
     <MESSAGE value="singleton dao command" />
     <MESSAGE value="menu receiver" />
     <MESSAGE value="write in file" />
-    <option name="LAST_COMMIT_MESSAGE" value="write in file" />
+    <MESSAGE value="methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="methods" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="605" y="140" key="#com.intellij.ide.util.MemberChooser" timestamp="1578988542221">
+    <state x="392" y="92" key="#Inspections" timestamp="1579084699877">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="605" y="140" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1578988542221" />
+    <state x="392" y="92" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1579084699877" />
+    <state x="392" y="92" key="#Log_Highlighting_(ideolog)" timestamp="1579085036863">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="92" key="#Log_Highlighting_(ideolog)/0.0.1600.860@0.0.1600.860" timestamp="1579085036863" />
+    <state x="392" y="92" key="#Plugins" timestamp="1579079579213">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="92" key="#Plugins/0.0.1600.860@0.0.1600.860" timestamp="1579079579213" />
+    <state x="605" y="140" key="#com.intellij.ide.util.MemberChooser" timestamp="1579091151260">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="140" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1579091151260" />
     <state x="451" y="360" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1578730128390">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -703,30 +785,30 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="263" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1578735840367" />
-    <state x="466" y="26" key="CommitChangelistDialog2" timestamp="1578988360355">
+    <state x="466" y="26" key="CommitChangelistDialog2" timestamp="1579025067503">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="466" y="26" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1578988360355" />
+    <state x="466" y="26" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1579025067503" />
     <state x="580" y="189" key="FileChooserDialogImpl" timestamp="1578756028515">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="189" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1578756028515" />
-    <state width="1557" height="235" key="GridCell.Tab.0.bottom" timestamp="1578996851609">
+    <state width="1557" height="166" key="GridCell.Tab.0.bottom" timestamp="1579107973695">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="235" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1578996851609" />
-    <state width="1557" height="235" key="GridCell.Tab.0.center" timestamp="1578996851609">
+    <state width="1557" height="166" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1579107973695" />
+    <state width="1557" height="166" key="GridCell.Tab.0.center" timestamp="1579107973695">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="235" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1578996851609" />
-    <state width="1557" height="235" key="GridCell.Tab.0.left" timestamp="1578996851609">
+    <state width="1557" height="166" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1579107973695" />
+    <state width="1557" height="166" key="GridCell.Tab.0.left" timestamp="1579107973695">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="235" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1578996851609" />
-    <state width="1557" height="235" key="GridCell.Tab.0.right" timestamp="1578996851609">
+    <state width="1557" height="166" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1579107973695" />
+    <state width="1557" height="166" key="GridCell.Tab.0.right" timestamp="1579107973695">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="235" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1578996851609" />
+    <state width="1557" height="166" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1579107973695" />
     <state width="1557" height="276" key="GridCell.Tab.1.bottom" timestamp="1578843642692">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -743,17 +825,21 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1557" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1578843642692" />
-    <state x="303" y="76" key="SettingsEditor" timestamp="1578851695910">
+    <state x="303" y="17" key="SettingsEditor" timestamp="1579078418424">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="303" y="76" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1578851695910" />
-    <state x="392" y="167" key="Vcs.Push.Dialog.v2" timestamp="1578988381913">
+    <state x="303" y="17" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1579078418424" />
+    <state x="392" y="167" key="Vcs.Push.Dialog.v2" timestamp="1579025084830">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="167" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1578988381913" />
-    <state x="456" y="195" key="run.anything.popup" timestamp="1579003855822">
+    <state x="392" y="167" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1579025084830" />
+    <state x="449" y="139" key="new project wizard" timestamp="1579085229238">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1579003855822" />
+    <state x="449" y="139" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1579085229238" />
+    <state x="456" y="195" key="run.anything.popup" timestamp="1579084724227">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="195" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1579084724227" />
   </component>
 </project>

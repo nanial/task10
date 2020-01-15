@@ -22,6 +22,17 @@ public class File implements Serializable {
         this.text = text;
     }
 
+    public File(String nameFile, Directory dir) {
+        this.nameFile = nameFile;
+        this.dir = dir;
+    }
+
+    public File(String nameFile, Directory dir, Text text) {
+        this.nameFile = nameFile;
+        this.dir = dir;
+        this.text = text;
+    }
+
     public Text getText() {
         return text;
     }

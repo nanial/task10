@@ -5,7 +5,7 @@
     <appender name="fileAppender" class="org.apache.log4j.RollingFileAppender">
         <param name="maxFileSize" value="10MB"/>
         <param name="maxBackupIndex" value="2"/>
-        <param name="file" value="target/log_file.log"/>
+        <param name="file" value="target/log.log"/>
         <layout class="org.apache.log4j.PatternLayout">
             <param name="ConversionPattern"
                    value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} - %m%n"/>
@@ -18,7 +18,7 @@
         <appender-ref ref="fileAppender"/>
     </category>
 
-    <category name="by.training.task10" additivity="false">
+    <category name="by.training.textfile" additivity="false">
         <!--all, trace, debug, info, warn, error, fatal-->
         <priority value="all"/>
         <appender-ref ref="fileAppender"/>

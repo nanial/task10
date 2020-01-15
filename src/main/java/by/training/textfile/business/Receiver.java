@@ -1,6 +1,7 @@
 package by.training.textfile.business;
 
 import by.training.textfile.apibusiness.FileManager;
+import by.training.textfile.exception.FileException;
 
 //from command
 
@@ -8,17 +9,17 @@ public class Receiver {
 
     FileManager fm = new FileManagerFactory().getFileManagerBuilder().getFileManager();
 
-    public void create(){ fm.create(); }
-    public void rename(){
+    public void create() throws FileException { fm.create(); }
+    public void rename() throws FileException {
         fm.rename();
     }
-    public void printConsole(){
+    public void printConsole() throws FileException {
         fm.printConsole();
     }
-    public void addInfo(){
+    public void addInfo() throws FileException {
         fm.addInfo();
     }
-    public void delete(){
+    public void delete() throws FileException {
        fm.delete();
     }
 }

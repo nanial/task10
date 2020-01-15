@@ -9,7 +9,7 @@ public class FS {
 
     public List<File> fillFS(){
 
-        files.add(new File("file # one"));
+        files.add(new File("file # one", new Directory(), new Text()));
         files.add(new File("file # two"));
         files.add(new File("file # three",
                 new Text("title", "initial content")));

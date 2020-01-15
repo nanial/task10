@@ -11,6 +11,7 @@ import by.training.textfile.business.FileManagerFactory;
 import by.training.textfile.business.FileManagerImpl;
 import by.training.textfile.business.MenuFactory;
 import by.training.textfile.dao.FSDaoImpl;
+import by.training.textfile.exception.FileException;
 import by.training.textfile.view.View;
 
 //Создать объект класса Текстовый файл, используя классы Файл, Директория.
@@ -27,8 +28,11 @@ public class Runner {
         System.out.println(fm.files());
 
         View view = new MenuFactory().getMenuBuilder().getMenu();
-        view.userService();
+        try {
+            view.userService();
+        } catch (FileException e) {
+            e.getMessage();
+        }
 
-        System.out.println(fm.files());
     }
 }

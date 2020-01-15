@@ -3,8 +3,14 @@
  <object class="java.util.ArrayList">
   <void method="add">
    <object class="by.training.textfile.bean.File">
+    <void property="dir">
+     <object class="by.training.textfile.bean.Directory"/>
+    </void>
     <void property="nameFile">
      <string>file # one</string>
+    </void>
+    <void property="text">
+     <object class="by.training.textfile.bean.Text"/>
     </void>
    </object>
   </void>

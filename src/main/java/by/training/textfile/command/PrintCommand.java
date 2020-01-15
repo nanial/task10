@@ -1,6 +1,7 @@
 package by.training.textfile.command;
 
 import by.training.textfile.business.Receiver;
+import by.training.textfile.exception.FileException;
 
 public class PrintCommand implements Command {
 
@@ -11,7 +12,7 @@ public class PrintCommand implements Command {
     }
 
     @Override
-    public void execute() {
+    public void execute() throws FileException {
         receiver.printConsole();
     }
 }

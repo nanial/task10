@@ -4,6 +4,7 @@ import by.training.textfile.apiDao.FSDao;
 import by.training.textfile.apibusiness.FileManager;
 import by.training.textfile.bean.*;
 import by.training.textfile.exception.FileException;
+import by.training.textfile.validar.Validator;
 
 import java.util.List;
 import java.util.Scanner;
@@ -11,9 +12,8 @@ import java.util.Scanner;
 public class FileManagerImpl implements FileManager {
 
     private FSDao dao;
-    FS fs =  new FSFactory().getFSBuilder().getFS();
+    Validator validator = new Validator();
     Scanner scanner = new Scanner(System.in);
-
 
     public FileManagerImpl() {
     }
@@ -76,7 +76,7 @@ public class FileManagerImpl implements FileManager {
         String nameFile = scanner.nextLine();
         File check = new File(nameFile);
 
-        if(!this.exists(check)){
+        if(!validator.exists(check, this.files())){
 
             throw new FileException("Attempt print non-existent file");
         }
@@ -100,7 +100,7 @@ public class FileManagerImpl implements FileManager {
         List<File> temp = this.files();
         File check = new File(nameFile);
 
-        if(!this.exists(check)){
+        if(!validator.exists(check, this.files())){
 
             throw new FileException("Attempt add info into non-existent file");
         }
@@ -122,29 +122,24 @@ public class FileManagerImpl implements FileManager {
 
         String nameFile = scanner.nextLine();
         List<File> temp = this.files();
+        File check = new File(nameFile);
 
-        for (File s : temp){
+        if(!validator.exists(check, this.files())){
+
+            throw new FileException("Attempt delete non-existent file");
+        }
+
+        for (File s : this.files()){
 
             if(s.getNameFile().equals(nameFile)){
 
                 temp.remove(s);
-            }
-            else {
-                throw new FileException("Attempt remove non-existent file");
             }
         }
 
         this.writeInFS(temp);
     }
 
-    boolean exists(File file){
 
-        for( File f : this.files()){
-            if(f.getNameFile().equals(file.getNameFile())){
-                return true;
-            }
-        }
-        return false;
-    }
 }
 

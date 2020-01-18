@@ -8,7 +8,7 @@ import by.training.textfile.exception.FileException;
 import java.util.EnumMap;
 import java.util.Map;
 
-public class Dispatcher {//developer
+public class Dispatcher {//invoker
 
     Receiver receiver;
     Command create;
@@ -16,7 +16,6 @@ public class Dispatcher {//developer
     Command addInfo;
     Command delete;
     Command print;
-
     private final Map<CommandEnum, Command> map =
             new EnumMap<CommandEnum, Command>(CommandEnum.class);
 
@@ -29,15 +28,6 @@ public class Dispatcher {//developer
         map.put(CommandEnum.RENAME, new RenameCommand(receiver));
     }
 
-    public Command getCommand(String userCommand) {
-        CommandEnum commandEnum;
-        Command command;
-
-        commandEnum = CommandEnum.valueOf(userCommand.toUpperCase().trim());
-        command = map.get(commandEnum);
-        return command;
-    }
-
     public Dispatcher(Command create, Command rename, Command addInfo,
                       Command delete, Command print) {
 
@@ -47,6 +37,16 @@ public class Dispatcher {//developer
         this.delete = delete;
         this.print = print;
     }
+
+    public Command getCommand(String userCommand) {
+        CommandEnum commandEnum;
+        Command command;
+
+        commandEnum = CommandEnum.valueOf(userCommand.toUpperCase().trim());
+        command = map.get(commandEnum);
+        return command;
+    }
+
     public void create() throws FileException { create.execute(); }
     public void rename() throws FileException {
         rename.execute();

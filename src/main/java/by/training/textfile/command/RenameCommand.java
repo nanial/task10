@@ -7,7 +7,6 @@ public class RenameCommand implements Command {
 
     Receiver receiver;
 
-
     public RenameCommand(Receiver receiver) {
         this.receiver = receiver;
     }

@@ -7,7 +7,7 @@ import by.training.textfile.exception.FileException;
 
 public class Receiver {
 
-    FileManager fm = new FileManagerFactory().getFileManagerBuilder().getFileManager();
+    FileManager fm = new Factory().getFileManagerBuilder().getFileManager();
 
     public void create() throws FileException { fm.create(); }
     public void rename() throws FileException {

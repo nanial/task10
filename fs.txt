@@ -10,14 +10,11 @@
      <string>file # one</string>
     </void>
     <void property="text">
-     <object class="by.training.textfile.bean.Text"/>
-    </void>
-   </object>
-  </void>
-  <void method="add">
-   <object class="by.training.textfile.bean.File">
-    <void property="nameFile">
-     <string>file # two</string>
+     <object class="by.training.textfile.bean.Text">
+      <void property="content">
+       <string>null hello</string>
+      </void>
+     </object>
     </void>
    </object>
   </void>

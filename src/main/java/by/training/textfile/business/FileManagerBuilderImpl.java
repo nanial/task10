@@ -10,7 +10,7 @@ public class FileManagerBuilderImpl implements FileManagerBuilder {
     private static FileManagerBuilderImpl instance;
     FSDao fsDao = new FSDaoImpl();
 
-     FileManagerBuilderImpl() {
+     private FileManagerBuilderImpl() {
         this.fm = new FileManagerImpl(fsDao);
     }
 

@@ -1,0 +1,15 @@
+
+2020-01-16 10:33:58 INFO  FileException - Attempt remove non-existent file
+2020-01-16 10:38:27 INFO  FileException - Attempt remove non-existent file
+2020-01-16 11:06:13 INFO  FileException - Attempt remove non-existent file
+2020-01-16 11:07:42 INFO  FileException - Attempt remove non-existent file
+2020-01-16 11:10:18 INFO  FileException - Attempt delete into non-existent file
+2020-01-18 11:04:54 INFO  FileException - Attempt delete non-existent file
+2020-01-18 11:17:39 INFO  FileException - Attempt delete non-existent file
+2020-01-18 11:27:40 INFO  FileException - Attempt print non-existent file
+2020-01-18 11:45:15 INFO  FileException - Attempt add info into non-existent file
+2020-01-18 12:12:05 INFO  FileException - from rename
+2020-01-18 12:12:45 INFO  FileException - from rename
+2020-01-18 12:25:32 INFO  FileException - Attempt rename non-existent file
+2020-01-21 11:45:07 INFO  FileException - Attempt add info into non-existent file
+2020-01-21 15:17:20 INFO  FileException - Attempt print non-existent file

@@ -1,9 +1,6 @@
-package by.training.textfile.validar;
+package by.training.textfile.validator;
 
-import by.training.textfile.apibusiness.FileManager;
 import by.training.textfile.bean.File;
-import by.training.textfile.business.FileManagerImpl;
-import by.training.textfile.dao.FSDaoImpl;
 
 import java.util.List;
 

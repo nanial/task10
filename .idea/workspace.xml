@@ -307,11 +307,12 @@
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/apiBusiness/GrottoBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/apiDao/GrottoDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/bean/Dragon.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/bean/Treasure.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/bean/TypeOfTreasure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/business/Factory.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/business/GrottoBuilderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/business/ServiceFactory.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/controller/CommandProvider.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/controller/Controller.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/controller/Runner.java" afterDir="false" />
@@ -321,14 +322,14 @@
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/controller/command/impl/MostExpensive.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/controller/command/impl/ShowTreasure.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/exception/TreasureException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/logic/api/DragonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/logic/api/Grotto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/logic/impl/DragonUtilsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/logic/impl/GrottoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/logic/api/DragonManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/logic/impl/DragonManagerImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/view/Menu.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/java/by/training/task10dragon/view/View.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/target/classes/by/training/task10dragon/controller/Runner.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.dragon/target/classes/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../by.training.dragon/treasure.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.task06sorting/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.task06sorting/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.task06sorting/.idea/compiler.xml" afterDir="false" />
@@ -379,7 +380,40 @@
       <change afterPath="$PROJECT_DIR$/../by.training.task08matrix/src/main/java/by/training/task08/view/PrintMatrixImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.task08matrix/src/main/resources/log4j.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.task08matrix/twoMatrix.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/validar/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/apiDao/FSDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/apibusiness/FSBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/apibusiness/FileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/apibusiness/FileManagerBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/apibusiness/MenuBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/Directory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/FS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/Text.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/TextFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FSBuilderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FileManagerBuilderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/MenuBuilderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/AddCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/CreateCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/DeleteCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/PrintCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/RenameCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/controller/Dispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/controller/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/dao/FSDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/view/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/view/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/log.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.task10calendar/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.task10calendar/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../by.training.task10calendar/.idea/misc.xml" afterDir="false" />
@@ -563,19 +597,17 @@
       <change beforePath="$PROJECT_DIR$/../../PharmaJava-master/target/classes/entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../PharmaJava-master/target/classes/entities/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../PharmaJava-master/target/classes/servlets/AdminProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../PharmaJava-master/target/classes/servlets/AdminProductServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FSFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FileManagerBuilderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FileManagerBuilderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FileManagerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/FS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/FS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/TextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/bean/TextFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/Factory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FileManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/FileManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/MenuFactory.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/business/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/RenameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/command/RenameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/controller/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/controller/Dispatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/controller/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/controller/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/validar/Validator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/training/textfile/view/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/training/textfile/view/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/business/MenuFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/command/RenameCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/command/RenameCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/controller/Dispatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/controller/Dispatcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/bean/FS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/bean/FS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/bean/TextFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/bean/TextFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/controller/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/controller/Runner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/training/textfile/view/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/training/textfile/view/Menu.class" afterDir="false" />
     </list>
@@ -624,6 +656,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -661,6 +694,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scratch (1)" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_20.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Scratch" />
       <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/createDeleteRename.java" />
@@ -681,6 +721,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Runner" />
+        <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="Java Scratch.Scratch" />
       </list>
     </recent_temporary>
@@ -743,7 +784,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579108506669</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Factory and Validator correction">
+      <created>1579337061018</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579337061018</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -753,7 +801,8 @@
     <MESSAGE value="write in file" />
     <MESSAGE value="methods" />
     <MESSAGE value="fix Logger and except" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix Logger and except" />
+    <MESSAGE value="Factory and Validator correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Factory and Validator correction" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="92" key="#Inspections" timestamp="1579084699877">
@@ -768,10 +817,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="92" key="#Plugins/0.0.1600.860@0.0.1600.860" timestamp="1579079579213" />
-    <state x="605" y="140" key="#com.intellij.ide.util.MemberChooser" timestamp="1579091151260">
+    <state x="605" y="140" key="#com.intellij.ide.util.MemberChooser" timestamp="1579608903947">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="605" y="140" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1579091151260" />
+    <state x="605" y="140" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1579608903947" />
     <state x="451" y="360" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1578730128390">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -784,30 +833,30 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1579334328259" />
-    <state x="466" y="26" key="CommitChangelistDialog2" timestamp="1579108502552">
+    <state x="466" y="26" key="CommitChangelistDialog2" timestamp="1579337058270">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="466" y="26" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1579108502552" />
+    <state x="466" y="26" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1579337058270" />
     <state x="580" y="189" key="FileChooserDialogImpl" timestamp="1579158727165">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="189" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1579158727165" />
-    <state width="1557" height="350" key="GridCell.Tab.0.bottom" timestamp="1579336940753">
+    <state width="1557" height="269" key="GridCell.Tab.0.bottom" timestamp="1579626690426">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="350" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1579336940753" />
-    <state width="1557" height="350" key="GridCell.Tab.0.center" timestamp="1579336940753">
+    <state width="1557" height="269" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1579626690426" />
+    <state width="1557" height="269" key="GridCell.Tab.0.center" timestamp="1579626690426">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="350" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1579336940753" />
-    <state width="1557" height="350" key="GridCell.Tab.0.left" timestamp="1579336940753">
+    <state width="1557" height="269" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1579626690426" />
+    <state width="1557" height="269" key="GridCell.Tab.0.left" timestamp="1579626690426">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="350" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1579336940753" />
-    <state width="1557" height="350" key="GridCell.Tab.0.right" timestamp="1579336940753">
+    <state width="1557" height="269" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1579626690426" />
+    <state width="1557" height="269" key="GridCell.Tab.0.right" timestamp="1579626690426">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="350" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1579336940753" />
+    <state width="1557" height="269" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1579626690426" />
     <state width="1557" height="276" key="GridCell.Tab.1.bottom" timestamp="1578843642692">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -828,10 +877,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="303" y="17" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1579078418424" />
-    <state x="392" y="167" key="Vcs.Push.Dialog.v2" timestamp="1579108519186">
+    <state x="392" y="167" key="Vcs.Push.Dialog.v2" timestamp="1579337068627">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="167" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1579108519186" />
+    <state x="392" y="167" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1579337068627" />
     <state x="449" y="139" key="new project wizard" timestamp="1579158717932">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

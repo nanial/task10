@@ -4,7 +4,7 @@ import by.training.textfile.apiDao.FSDao;
 import by.training.textfile.apibusiness.FileManager;
 import by.training.textfile.bean.*;
 import by.training.textfile.exception.FileException;
-import by.training.textfile.validar.Validator;
+import by.training.textfile.validator.Validator;
 
 import java.util.List;
 import java.util.Scanner;
@@ -41,7 +41,7 @@ public class FileManagerImpl implements FileManager {
         List<File> temp = this.files();
         File tempFile = new File(nameFile, directory);
 
-        if (temp.contains(tempFile)) {
+        if (this.files().contains(tempFile)) {
 
             throw new FileException("Attempt to create file already exists");
         }
@@ -57,9 +57,13 @@ public class FileManagerImpl implements FileManager {
 
         String nameFile = scanner.nextLine();
         String newNameFile = scanner.nextLine();
-
         List<File> temp = this.files();
+        File check = new File(nameFile);
 
+        if(!validator.exists(check, this.files())){
+
+            throw new FileException("Attempt rename non-existent file");
+        }
         for (File s : temp){
 
             if(s.getNameFile().equals(nameFile)){
@@ -83,11 +87,11 @@ public class FileManagerImpl implements FileManager {
 
         for (File s : this.files()){
 
-            if(s.getNameFile().equals(nameFile)){
+                if (s.getNameFile().equals(nameFile)) {
 
-                System.out.println("File contents " + s.getText().getTitle()
-                        + " " + s.getText().getContent());
-            }
+                    System.out.println("File contents " + s.getText().getTitle()
+                            + " " + s.getText().getContent());
+                }
         }
     }
 
@@ -107,12 +111,12 @@ public class FileManagerImpl implements FileManager {
 
         for (File s : temp){
 
-            if(s.getNameFile().equals(nameFile)){
+                if (s.getNameFile().equals(nameFile)) {
 
-                String content =  s.getText().getContent();
-                String strTemp = content + " " + suppSnippet;
-                s.getText().setContent(strTemp);
-            }
+                    String content = s.getText().getContent();
+                    String strTemp = content + " " + suppSnippet;
+                    s.getText().setContent(strTemp);
+                }
         }
         this.writeInFS(temp);
     }
@@ -139,7 +143,5 @@ public class FileManagerImpl implements FileManager {
 
         this.writeInFS(temp);
     }
-
-
 }
 

@@ -4,17 +4,24 @@
   <void method="add">
    <object class="by.training.textfile.bean.File">
     <void property="dir">
-     <object class="by.training.textfile.bean.Directory"/>
+     <object class="by.training.textfile.bean.Directory">
+      <void property="pathName">
+       <string>\d:study</string>
+      </void>
+     </object>
     </void>
     <void property="nameFile">
      <string>file # one</string>
     </void>
     <void property="text">
-     <object class="by.training.textfile.bean.Text">
-      <void property="content">
-       <string>null hello</string>
-      </void>
-     </object>
+     <object class="by.training.textfile.bean.Text"/>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="by.training.textfile.bean.File">
+    <void property="nameFile">
+     <string>file # two</string>
     </void>
    </object>
   </void>

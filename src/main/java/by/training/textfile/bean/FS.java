@@ -7,9 +7,9 @@ public class FS {
 
     List<File> files = new ArrayList<>();
 
-    public List<File> fillFS(){
+    public List<? extends File> fillFS(){
 
-        files.add(new File("file # one", new Directory(), new Text()));
+        files.add(new File("file # one", new Directory("\\d:study"), new Text()));
         files.add(new File("file # two"));
         files.add(new File("file # three",
                 new Text("title", "initial content")));

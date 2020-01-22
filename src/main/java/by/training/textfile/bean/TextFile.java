@@ -7,8 +7,11 @@ public class TextFile extends File implements Serializable {
 
     private Text text;
 
+    public TextFile() {
+    }
+
     public TextFile(String nameFile) {
-        super((nameFile));
+        super(nameFile);
     }
 
     public TextFile(Text text) {
@@ -17,6 +20,11 @@ public class TextFile extends File implements Serializable {
 
     public TextFile(String nameFile, Text text) {
         super(nameFile);
+        this.text = text;
+    }
+
+    public TextFile(String nameFile, Directory dir, Text text) {
+        super(nameFile, dir);
         this.text = text;
     }
 
